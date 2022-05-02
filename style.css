@@ -1,0 +1,151 @@
+
+*{
+    box-sizing: border-box;
+}
+@media(max-width: 1000px){
+    .container {
+        color: red;
+        width: 700;
+            }
+    .twhite{
+        width: 600px;
+    }
+    table{
+        width: 600px;
+    }
+    .tgrey{
+        width: 600px;
+    }
+    
+}
+body{
+    margin: 0px;
+    padding: 0;
+    background-color:  #ced3e7;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+.heading{
+    width: 80%;
+}
+.logo{
+    width: 20px;
+    float: left;
+    margin: 0px;
+    padding: 0;
+    
+}
+.shoes{
+    width: 170px;
+    float: right;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+
+}
+.heading h1{
+    color: rgb(15, 13, 13);
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    word-spacing: 3px;
+    height: 18px;
+    
+}
+.buttons{
+    color: white;
+    background-color: rgb(87, 38, 193);
+    border: none;
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.cap {
+    font-weight: 300px;
+    font-size: large;
+    margin-top:60px;
+}
+table{
+    border: none;
+    width: 1370px;
+    height: 20px;
+    border-width: 15px;
+    margin-top: px;
+    text-align: center;
+    
+}
+.twhite{
+    background-color:rgb(236, 226, 226);
+    padding: 10px;
+    margin: 10px;
+    height: 30px;
+    width: 60px;
+    
+    
+}
+.tgrey{
+    background-color: rgb(164, 155, 155);
+    padding: 10px;
+    margin: 10px;
+    width: 60px;
+    height: 30px;
+}
+.bimg{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    float: left;
+    margin-top: 42px;
+}
+.container{
+    margin: 30px 20px 30px;
+    background-color: whitesmoke;
+    padding: 5px;
+    width: 1450px;
+    height: 720px;
+    overflow: hidden;
+}
+.main{
+    width: 1800px;
+    margin: 35px;
+}
+#buttom{
+    
+    margin-left: 012px;
+}
+.dbuttons {
+    color: white;
+    background-color: rgb(87, 38, 193);
+    border: none;
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: -10px;
+    margin-left: 23px;
+    cursor: pointer;
+}
+span{
+    font-size: 10px;
+    margin: 7px;
+}
+.buttons:hover{
+    background-color: teal;
+}
+.buttom::selection{
+    color:rgb(25, 185, 25);
+    background-color: white;
+}
+.abt{
+     font-size: 1.2rem;
+     font-weight: bolder;
+     margin-left: 100px;
+     margin-top: 30px;
+    
+    }  
+p{
+    font-size: 1rem;
+    font-weight: normal;
+    margin-left: 100px;
+    margin-top: -13px;
+    width: 1270px;
+}
