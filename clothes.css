@@ -1,0 +1,210 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(181, 171, 171);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+
+
+}
+.container{
+    background-color: rgb(244, 243, 237);
+    height: 150vh;
+    width: 95vw;
+    margin: 20px;
+}
+span{
+    font-size: 10px;
+    font-weight: bolder;
+    
+}
+.logoo{
+    width: 20px;
+    margin: 0px 0px 0px 30px;
+}
+.navlinks{
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+    align-items: center;
+    height: 30px;
+}
+.links{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+.links a{
+    font-size: 13px;
+    font-weight: 200px;
+
+}
+.navlinks , .sign {
+    font-size: 12px;
+}
+.sign{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bolder ;
+    margin-right: 10px;
+}
+.sign .signup a{
+    background-color: rgb(87, 38, 193);
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border-radius: 15px 15px 15px 15px;
+}
+.nav{
+    display: flex;  
+    justify-content: space-between;
+    text-decoration-line: none;
+    height: 6vh;
+    align-items: center;
+}
+.navlinks a, .sign a {
+    text-decoration: none;
+    color: rgb(35, 32, 32);
+}
+.signup a {
+    color: white;
+}
+.top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 35vh;
+}
+.topmsg h1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px
+}
+.topmsg{
+    text-transform: uppercase;
+    font-size: 20px;    
+}
+.topimg img{
+    width: 160px;
+}
+.topmsg a {
+    background-color: rgb(87, 38, 193);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width:250px;
+    border-radius: 15px 15px 15px 15px;
+    text-decoration: none;
+    font-size: 19px;
+    color: aliceblue;
+    margin: 30px 0px 10px 0px;
+}
+.middle{
+    background-color: rgb(156, 99, 210);
+    height: 25vh;
+}
+.box1, .box2, .box3{
+    width: 140px;
+    height: 90px;
+    border-radius: 20%;
+    background: linear-gradient(180deg, rgba(231, 213, 122, 0.2), rgb(233, 206, 98));
+    display: flex;
+    flex-basis: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    margin-top: 45px;
+}
+.boxes img{
+    width: 80px;
+    height: 80px;
+    margin: 0px 0px 60px 0px
+
+}
+
+.midtxt{
+    font-size: 18px;
+    font-weight: 100px;
+    margin: 15px 0px 0px 50px
+}
+.lineunder{
+    background-color: rgb(107, 63, 202);
+    width: 62px;
+    height: 04px;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 3px;
+}
+.bottom{
+    display: flex;
+    width: 800px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0px 0px 70px;
+}
+.bottom p{
+    width: 620px;
+    margin: 20px 0px 0px 0px;
+}
+.bottom .smiley {
+    width: 70px;
+    height: 70px;
+}
+.bottom .aboutus a{
+    background-color: rgb(50, 56, 183);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width:100px;
+    border-radius: 10px 10px 10px 10px;
+    text-decoration: none;
+    font-size: 19px;
+    color: aliceblue;
+    margin: 5px 0px 0px 0px;
+}
+.table{
+    margin: 70px 0px 0px 0px;
+}
+.bottom .aboutus p{
+    font-weight: lighter;
+    font-size: normal;
+}
+h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 608px;
+    font-weight: 500px;
+    font-size: 20px;
+}
+.tables{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1140px;
+    margin: 30px 0px 0px 0px;
+}
+table{
+    width: 700px;
+    height: 200px;
+    text-align: center;
+}
+.twhite {
+    background-color: rgb(238, 229, 229);  
+    
+}
+.tgrey{
+    background-color: rgba(143, 137, 137, 0.601);
+    
+}
