@@ -1,0 +1,123 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right top, rgb(146, 134, 134), rgb(236, 234, 234));
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100vh;
+}
+.fullbody{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;    
+    width: 1300px;
+    margin-left: 100px;
+    
+}
+h1{
+    color:rgb(33, 57, 196);
+    font-weight: bold ;
+    font-size: 50px;
+    text-emphasis-color: blue;   
+}
+p{
+    font-style: italic;
+    font-stretch: expanded;
+    margin-top: 20px;
+}
+.container{
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    box-shadow: 3px 1.5px 11px 2px rgb(196, 187, 187);
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 40px;
+    border-radius: 30px;
+
+
+}
+.facebook{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    
+    height: 35px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1.5px solid grey;
+    padding: 10px;
+}
+.login{
+    
+    height: 40px;
+    background-color: rgb(33, 57, 196);
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    
+}
+.forgotpassword{
+    color: rgb(33, 57, 196);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+.line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.lines{
+    width: 190px;
+    height: 2px;
+    background-color: rgb(186, 169, 169);   
+}
+#create, .create{
+    background-color: rgb(15, 114, 15);
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 45px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+
+}
+h2 span {
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+}
+.container .buttom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2 p {
+    font-size: small;
+    font-weight: lighter;
+
+}
