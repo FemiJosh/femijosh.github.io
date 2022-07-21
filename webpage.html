@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="webpage.css">
+</head>
+<body>
+    <div class="firstcontainer">
+        <div class="secondcontainer">
+            <div class="contents">
+                <h1>Our Pricing</h1>
+                <div class="middles">
+              <div class="middle">
+                <div class="circle"></div>  
+                <div class="years">
+                    <div class="year1"> Annually</div>
+                    <div class="year2"> Manually </div>
+                </div>             
+              </div>
+            </div>
+              
+            </div>
+           
+            <div class="cards">
+                <div class="firstcard">
+                    <h2> Basic </h2>
+                    <p class="money"> $ 19.99 </p>
+                    <div class="firstcardlists">
+                        <ul>
+                            <li> 500 GB Storage</li>
+                            <li> 2 Users Allowed </li>
+                            <li> Send up to 3 GB</li>
+                        </ul>
+                    </div>
+                    <button class="firstbtn"> learn more </button>
+                </div>
+                <div class="secondcard">
+                    <h2> Professional </h2>
+                    <p class="money"> $ 24.99 </p>
+                    <div class="secondcardlists">
+                        <ul>
+                            <li> 1 TB Storage</li>
+                            <li> 5 Users Allowed </li>
+                            <li> Send up to 10 GB</li>
+                        </ul>
+                    </div>
+                    <button class="secondbtn"> learn more </button>
+                </div>
+                <div class="thirdcard">
+                    <h2> Master </h2>
+                    <p class="money"> $ 39.99 </p>
+                    <div class="thridcardlist">
+                        <ul>
+                            <li> 2 TB Storage</li>
+                            <li> 10 Users Allowed </li>
+                            <li> Send up to 20 GB</li>
+                        </ul>
+                    </div>
+                    <button class="thirdbtn"> learn more </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', ()=>{
+            let middle = document.querySelector('.middle')
+        let circle = document.querySelector('.circle')
+         circle.addEventListener('click',()=>{
+            circle.classList.toggle('transfer')
+        })
+        // let firstBtn= document.querySelector('.firstbtn');
+        // let secondBtn= document.querySelector('.secondbtn');
+        // let thirdBtn= document.querySelector('.thirdbtn')
+        
+        // firstBtn.addEventListener('mouseover', ()=>{
+        //     firstBtn.classList.toggle('btnhover')
+        // })
+
+
+        })
+      
+    </script>
+</body>
+</html>
