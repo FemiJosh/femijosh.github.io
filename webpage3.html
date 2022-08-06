@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebPage-3</title>
+    <link rel="stylesheet" href="webpage3.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"> wetin - dy</div>
+        <div class="nav-links">
+            <ul>
+                <li>home  </li>
+                <li> log-in </li>
+                <li> register </li>
+                <li> <span>new plans</span>
+                </li>
+            </ul>
+        </div>
+      
+             <div class="burgercontainer">
+                    <div class="burger1">
+                    </div>
+                    <div class="burger2">
+                    </div>
+                  <div class="burger3">
+                    </div>
+                </div>
+          
+    </nav>
+    <div class="phonelinks2">
+        <ul class="thelinks">
+            <li>home  </li>
+            <li> log-in </li>
+            <li> register </li>
+            <li> <span>new plans</span>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <img  class="sectionimg" src="image/PngItem_2978988.png" alt="happypeople">
+    </div>
+    <section>
+        <div class="section1">
+        <h1>Humanizing your insurance.</h1>
+        <p class="sectiontext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium expedita perferendis natus excepturi reprehenderit minima voluptas voluptate error accusamus iure!</p>
+        <button class="sectionbtn"> view plans</button>
+        </div>
+    </section>
+   
+    <main>
+            <h2>We're different</h2>    
+        <div class="main-links">
+            <div class="link1">
+                <img src="image/whatsapp.png" alt="" class="main-img">
+                <h3> Snappy Process</h3>
+                <p class="main-text">Lorem ipsum dolor sit amet, celit.ut ipsum tempora molestias corrupti minima praesentium laboriosam debitis deleniti consequatur.</p>
+            </div>
+            <div class="link2">
+                <img src="image/whatsapp.png" alt="" class="main-img">
+                <h3> Affordable Prices</h3>
+                <p class="main-text">Lorem ipsum dolor sit amet, c ut ipsum tempora molestias corrupti minima praesentium laboriosam debitis deleniti consequatur.</p>
+                
+            </div>
+            <div class="link3">
+                <img src="image/whatsapp.png" alt="" class="main-img">
+                <h3> People First</h3>
+                <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisi corrupti minima praesentium laboriosam debitis deleniti consequatur.</p>
+                
+            </div>
+        </div>
+    </main>
+    <header>
+        <div class="subone">
+            <p class="subtext"> Find out more about how we work
+            </p>
+            <button class="subbtn"> Click to see</button>
+        </div>
+    </header>
+    <address>
+        <div class="addresslogo"><h4> wetin dy</h4></div>
+        <div class="footerimg">
+            <img src="icons/home_FILL0_wght400_GRAD0_opsz48.png" alt="HOME">
+            <img src="icons/delete_FILL0_wght400_GRAD0_opsz48.png" alt="DELETE">
+            <img src="icons/logout_FILL0_wght400_GRAD0_opsz48.png" alt="LOGOUT">            <img src="image/dialog.png" alt="dialog">
+            
+        </div>
+    </address>
+ 
+    <footer>
+        <hr>
+        <div class="linkcontainer">
+            <div class="linkone">
+                <h4> our company</h4>
+                <ol>
+                    <li>how we work</li>
+                    <li> why wetin </li>
+                    <li> check price</li>
+                    <li> reviews </li>
+                </ol>
+            </div>
+            <div class="linktwo">
+                <h4> help me </h4>
+                <ol>
+                    <li> faq</li>
+                    <li> terms of use </li>
+                    <li> privacy policy </li>
+                    <li> cookies </li>
+                </ol>
+            </div>
+            <div class="linkthree">
+                <h4> contact </h4>
+                <ol>
+                    <li> sales </li>
+                    <li> support </li>
+                    <li> live chat </li>
+                </ol>
+            </div>
+            <div class="linkfour">
+                <h4> others </h4>
+                <ol>
+                    <li> careers </li>
+                    <li> press </li>
+                    <li> licenses  </li>
+                </ol>
+            </div>
+        </div>
+        </footer>
+            <script> 
+            const list = document.querySelector('.thelinks')
+            const burgers = document.querySelector('.burgercontainer')
+            const cancel = document.querySelector('.cancel')
+            burgers.addEventListener('click',(e)=>{
+                list.classList.toggle('active');
+                e.target.classList.toggle('theburger');
+            })
+            </script>
+    </body>
+</html>

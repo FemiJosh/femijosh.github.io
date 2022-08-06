@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+                     <!-- FIRST PROJECT -->
+
+    <section class="first">
+        <div class="bigimg" id="shower">
+            <img src="image/580b57fbd9996e24bc43bf8f.png" class="thebigimg">
+            <span onclick="closeImg()"> X </span>
+        </div>
+        <div class="gallerycont">
+            <h1>Photo Gallery </h1>
+            <div class="images">
+                <img src="image/580b57fbd9996e24bc43bf8f.png" class="active" onclick="showImg(this.src)">
+                <img src="image/nikeshoes2.jpg" class="active" onclick="showImg(this.src)">
+                <img src="image/love.png" class="active" onclick="showImg(this.src)"> 
+                <img src="image/minion.jpg" class="active" onclick="showImg(this.src)">
+                <img src="image/lo.png" class="active" onclick="showImg(this.src)">
+                <img src="image/instagram.png" class="active" onclick="showImg(this.src)">
+                <img src="image/happypeople.jpg" class="active" onclick="showImg(this.src)">
+                <img src="image/smiley.png"  class="active" onclick="showImg(this.src)">
+                <img src="image/nikeshoes.jpg" class="active" onclick="showImg(this.src)">
+    
+            </div>
+        </div>    
+    </section>
+                   <!-- SECOND PROJECT -->
+
+    <section class="second">
+        <div class="container">
+            <div class="littleimgs">
+                <img src="image/whatsapp.png"" class="littleimg"  >
+                <img src="image/youtube.png" class="littleimg">
+                <img src="image/twitter.png" class="littleimg">
+                <img src="image/youtube logo.png"  class="littleimg">
+                <img src="image/smiley.png"  class="littleimg">
+            </div>
+            <div class="mainimg">
+                <img src="image/smiley.png" class="themainimg">
+            </div>
+        </div>
+    </section>
+
+
+                 <!-- THIRD PROJECT -->
+    <section class="thirdsection">
+        <div class="pagebox">
+            <div class="btns">
+                <div class="layer"></div>
+                <button class="loginbtn" onclick="toggleback()">
+                    login
+                </button>
+                <button class="regbtn" onclick="toggle()">
+                    register
+                </button>
+              </div>
+              <div class="icons">
+                <img src="image/whatsapp.png">
+                <img src="image/youtube.png">
+                <img src="image/smiley.png">
+              </div>
+                <form id="login">
+                    <div class="loginform">
+                        <input type="email" name="mail" id="mailer" placeholder="Email Address" required>
+                        <input type="password" name="password" id="password" placeholder="Enter Your Password">
+                        <input type="checkbox" class="check"> <p class="remember">Remeber Password</p>
+
+                    </div>
+                    <button class="submitbtn"> Login</button>
+              </form>
+
+              <form id="register">
+                <div class="loginform">
+                    <input type="email" name="mail" id="mailer" placeholder="Email Address" required>
+                    <input type="password" name="password" id="password" placeholder="Enter Your Password">
+                    <input type="password" name="password" id="password" placeholder="Enter Your Password">
+                </div>
+                <button class="submitbtn"> Register</button>
+          </form>
+              </div>
+              
+        </div>
+   
+    </section>
+
+
+
+             <!-- SCRIPT PAGE -->
+    <script>
+        var shower = document.getElementById('shower');
+        var thebigimg = document.querySelector('.thebigimg')
+      function showImg(pics){
+        shower.style.display = 'flex';
+        thebigimg.src = pics;
+     }
+     function closeImg(){
+        shower.style.display = 'none'
+     }
+     var smallImg = document.querySelector('.themainimg');
+     var smallimages =document.querySelectorAll('.littleimg').forEach(image =>{
+        image.addEventListener('mouseover',()=>{
+            smallImg.src = image.src;
+        })
+     })
+
+     var loginForm = document.querySelector('#login');
+     var regForm = document.querySelector('#register')
+     var layer = document.querySelector('.layer');
+     var loginBtn = document.querySelector('.loginbtn');
+     var regBtn = document.querySelector('.regbtn');
+     function toggleback(){
+        layer.style.transform = 'translateX(0%)'
+        regForm.style.left = '450px'
+        loginForm.style.left = '50px'
+     }
+     function toggle(){
+        layer.style.transform = 'translateX(100%)'
+        regForm.style.left = '50px'
+        loginForm.style.left = '-450px'
+        regForm.style.opacity = '1'
+     }
+    </script>
+</body>
+</html>
