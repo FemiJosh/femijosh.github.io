@@ -1,0 +1,84 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing:border-box ;
+}
+@font-face {
+    font-family: Comforta ;
+    src: url(font/RobotoMono/RobotoMono-Bold.ttf);
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Comforta;
+}
+.calc{
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.603);
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 2px 1px 3px 2px rgba(128, 128, 128, 0.203);
+}
+.screen{
+    background-color: darkkhaki;
+    margin: 0.5rem;
+    height: 100px;
+    width: 300px;
+    text-align: right;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.display1 , .display2{
+    font-size: 1.7rem;
+    padding: 0.5rem;
+}
+.tempresult{
+    position: absolute;
+    bottom: 1rem;
+    color: rgb(128, 128, 128);
+    padding: 3px;
+    margin-left: 5px;
+}
+.numsandops{
+    margin: 1.1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.button{
+    text-align: center;   
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bolder;
+    padding: 30px;
+    margin: 9px;
+}
+.operator, .equals, .clearall, .backspace{
+    background-color: rgba(43, 41, 41, 0.49);
+    color: white ;
+    border-radius: 50%;
+    
+}
+
+section{
+    display: flex;
+    position: absolute;
+    bottom: 25px;
+}
+.icons{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.icons img{
+    width: 25px;
+}
