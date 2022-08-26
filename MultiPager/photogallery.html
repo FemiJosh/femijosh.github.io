@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> The Celebrated Techies</title>
+    <link rel="stylesheet" href="photogallery.css">
+</head>
+<body>
+    <nav>
+        <img src="../image/lo.png" class="logo">
+        <ul class="nav-links">
+            <li> <a href="#"> Categories </a> </li>
+            <li> <a href="#"> Past editions </a> </li>
+            <li> <a href="futureEditions.html"> Future editions </a> </li>
+            <li> <a href="contawards.html"> About us </a> </li>
+            <li> <a href="donation.html"> Make a donation </a> </li>
+            <li> <a href="loginpage.html" class="phone-link"> Log In </a></li>
+            <li> <a href="registerpage.html" class="phone-link">Create Account </a></li>
+        </ul>
+        <img src="/icons/burger (2).png" class="burger">
+        <div class="profile">
+            <div class="profile-icon">
+                <img src="/icons/energy1.png" class="profile-icon">
+                <span> 70 </span>
+            </div>
+               
+            <hr>
+            <div class="profile-name" id="theprofile">
+                <img src="/icons/profile photo.png" class="profile-photo">
+                <span> Femi Joshua</span>
+            </div>
+        </div>
+        <div class="logout-container">
+            <div class="profile-name">
+                <img src="/icons/profile photo.png" class="profile-photo">
+                <span> Femi Joshua</span>
+            </div>
+            <p> Log Out </p>
+        </div>
+    </nav>
+    <hr>
+    <header>
+        <h1>
+            Photo Gallery
+        </h1>
+       <p> Our collage of photos and memories from notable events/p>
+    </header>
+
+    <section>
+        <!-- <div class="image-reveal">
+            <img src="/image/minion.jpg" class="main-image">
+            <div class="the-arrows">
+                <img src="/icons/left-arrow.png" class="left-arrow">
+                <img src="/icons/right-arrow.png" class="right-arrow">
+            </div>
+        <p> X </p>
+
+        </div> -->
+        <div class="images-container">
+            <img src="/image/Unsplash/2h-media-0A6ilLKK9dA-unsplash.jpg" class="photo">
+            <img src="/image/Unsplash/ali-moradi-IG5pQfM8MAo-unsplash.jpg" class="photo">
+            <img src="/image/Unsplash/ali-moradi-sSbJK16iWUA-unsplash.jpg" class="photo">
+            <img src="/image/Unsplash/ali-moradi-VI8SRI2_CYA-unsplash.jpg" class="photo">
+            <img src="/image/Unsplash/ali-moradi-xb6WLnX3FJY-unsplash.jpg" class="photo">
+            <img src="/image/Unsplash/ali-moradi-YKIrwvqdLLE-unsplash.jpg" class="photo">
+            <img src="/image/Unsplash/ana-gg-TaruzQ4NIf8-unsplash.jpg" class="photo">
+            <img src="/image/Unsplash/ana-petrenko-AvRXkg6qM_4-unsplash.jpg" class="photo">
+            <img src="/image/Unsplash/matteo-vella-NdzTeOw85s8-unsplash.jpg" class="photo">
+            <img src="/image/Unsplash/krisjanis-kazaks-y2xDrooaEEY-unsplash.jpg" class="photo">
+            <img src="/image/Unsplash/krisjanis-kazaks-_sT3iE8WDlQ-unsplash.jpg" class="photo">
+            <img src="/image/Unsplash/keith-tanner-y5ji0c37KFM-unsplash.jpg" class="photo">
+            <img src="/image/Unsplash/keith-tanner-Q51zwMEepjY-unsplash.jpg" class="photo">
+            <img src="/image/Unsplash/keila-hotzel-lFmuWU0tv4M-unsplash.jpg" class="photo">
+            <img src="/image/Unsplash/jonathan-kemper-OEpC6UQrWQU-unsplash.jpg" class="photo">
+            <img src="/image/Unsplash/farkas-mario-RSUftfqgJKY-unsplash.jpg" class="photo">
+            <img src="/image/Unsplash/bilal-mansuri-wH4cOMtOkNU-unsplash.jpg" class="photo">
+            <img src="/image/Unsplash/bilal-mansuri-_nFgGYxeGD4-unsplash.jpg" class="photo">
+            <img src="/image/Unsplash/benjamin-brunner-WDflwuw-9YA-unsplash.jpg" class="photo">
+            <img src="/image/Unsplash/andrew-romanov-Jrhn_oQWVt4-unsplash.jpg" class="photo">
+        </div>
+    </section>
+    <script>
+        let logoutCont = document.querySelector('.logout-container');
+         let  profile =  document.querySelector('#theprofile');
+           profile.addEventListener('click',()=>{
+            appear();
+        })
+        function appear(){
+            logoutCont.classList.toggle('appear')
+        }
+
+        let navLinks = document.querySelector('.nav-links');
+        let cancel= document.querySelector('.cancel');
+        let burger = document.querySelector('.burger').addEventListener('click', (e)=>{
+            // event.target.src= cancel.src;
+    
+            navLinks.classList.toggle('show')
+        })
+       
+
+    </script>
+</body>

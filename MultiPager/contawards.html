@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Connected Awards</title>
+    <link rel="stylesheet" href="contawards.css">
+</head>
+
+<body>
+    <nav>
+        <img src="../image/lo.png" class="logo">
+        <ul class="nav-links">
+            <li> <a href="#"> Categories </a> </li>
+            <li> <a href="#"> Past editions </a> </li>
+            <li> <a href="futureEditions.html"> Future editions </a> </li>
+            <li> <a href="contawards.html"> About us </a> </li>
+            <li> <a href="donation.html"> Make a donation </a> </li>
+            <li> <a href="loginpage.html" class="phone-link"> Log In </a></li>
+            <li> <a href="registerpage.html" class="phone-link">Create Account </a></li>
+        </ul>
+            <button class="nav-login-btn"> <a href="loginpage.html"> Log In </a>  </button>
+            <button class="nav-register-btn" > <a href="registerpage.html"> Create Account </a> </button>
+            <!-- PHONE DISPLAY BURGER -->
+
+            <img src="/icons/burger (2).png" class="burger">
+            <img src="/icons/times (2).png" class="cancel">
+    </nav>
+
+    <hr>
+    <header>
+        <h1>The Connected Awards</h1>
+        <p> Learn about us </p>
+        <img src="/image/Unsplash/ben-griffiths-TgAOYzHDfMc-unsplash.jpg">
+    </header>
+    <section>
+        <div class="textbox">
+            <h2>Connecting Techies Globally</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio temporibus, omnis, culpa eligendi fuga facilis maxime accusantium rem, animi deleniti explicabo ab quia eos quo nihil architecto nostrum consequatur nisi et nobis laboriosam corporis. Ipsum voluptatum iste tempore quibusdam facere culpa voluptatibus, dicta soluta incidunt? Ullam asperiores molestiae excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, fugit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic inventore minus ut fuga similique doloribus temporibus totam culpa neque labore.
+            </p>
+        </div>
+        <img src="/image/Unsplash/ph-m-chung-8BRUi0WDlq4-unsplash.jpg" class="second-section-image">
+    </section>
+    <script>
+        
+        let navLinks = document.querySelector('.nav-links');
+        let cancel= document.querySelector('.cancel');
+        let burger = document.querySelector('.burger').addEventListener('click', (e)=>{
+            // event.target.src= cancel.src;
+    
+            navLinks.classList.toggle('show')
+        })
+       
+        </script>
+</body>

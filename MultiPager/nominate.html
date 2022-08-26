@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nominate Someone</title>
+    <link rel="stylesheet" href="nominate.css">
+</head>
+<body>
+  
+    <div class="container">
+        <header>
+            <h1>
+              Nominate a candidate for <br> The Connected Award
+           </h1>
+          <p> Enter The Nominee's Information below</p>
+       </header>
+
+       <form>
+        <div class="award-form">
+            <h3> Award Category</h3>
+        <input type="email" class="award-input" placeholder="Select Category">
+        </div>
+        <div class="name-form">
+            <h3> Full Name</h3>
+            <input type="text" class="register-input">
+        </div>
+        <div class="email-form">
+            <h3> Award Category</h3>
+        <input type="email" class="award-input" placeholder="Select Category">
+        </div>
+
+        <h2> Social Media Links </h2>
+        <div class="Social-Medias">
+            <div class="Linkedin">
+                <h3> <img src="/icons/google (1).png"> Linkedin</h3>
+                <input type="text">
+            </div>
+            <div class="Instagram">
+                <h4> <img src="/icons/instagram.png"> Instagram</h4>
+                <input type="text">
+            </div>
+            <div class="Twitter">
+                <h4> <img src="/icons/twitter.png"> Twitter </h4>
+                <input type="text">
+            </div>
+            <div class="Facebook">
+                <h4> <img src="/icons/facebook.png" alt=""> Facebook</h4>
+                <input type="text">
+            </div>
+        </div>
+
+       </form>
+
+       <section>
+        <p class="section-text">The First-Ever Tech Personality Awards Recognizing Promising and Exceptional African Talents in all Technological Fields. The West African Countries include 16 countries of Benin, Burkina Faso, Gambia, Ghana, Guinea, Guinea-Bissau, Ivory Coast, Liberia, Mali, Mauritania, Niger, Nigeria, Senegal, Sierra Leone, and Togo</p>
+        <p class="questions"> For questions, partnerships & enquiries, send us a mail via <br> <a href="#"> connectedawards@gmail.com</a></p>
+        <button class="thebtn"> Submit </button>
+       </section>
+       
+       <div class="confirmation-message-container">
+        <div class="confirmation-message">
+            <img src="/icons/thumb-up.png">
+            <h5> Awesome!</h5>
+            <span class="cancel-confirmation"> x </span>
+            <p> Your Nomination has been submitted </p>
+            <button> Return to homepage</button>
+        </div>
+
+    </div>
+    </div>
+   
+    <script>
+
+        let container = document.querySelector('.confirmation-message-container')
+        let theBtn = document.querySelector('.thebtn')
+              theBtn.addEventListener('click',()=>{
+                container.classList.toggle('todisplay')
+            })
+        let cancel = document.querySelector('.cancel-confirmation').addEventListener('click', ()=>{
+            container.style.display = 'none'
+        })
+        
+    </script>
+</body>S

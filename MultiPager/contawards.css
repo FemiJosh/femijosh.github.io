@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+@font-face {
+    font-family: Poppins ;
+    src: url(/font/Poppins/Poppins-Medium.ttf);
+}
+body{
+    padding: 0rem 5rem;
+    font-family: Poppins;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 120px;
+    height: 120px;
+}
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-around;
+}
+ul li {
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: .9rem;
+    font-weight: 900;
+}
+ul li .phone-link{
+    display: none;
+}
+.nav-login-btn{
+    padding: 17px;
+    background-color: rgba(179, 149, 179, 0.414);
+    color: purple;
+    font-size: 1rem;
+    font-weight: 900;
+    width: 120px;
+    border: none;
+    border-radius: 6px;
+}
+.nav-login-btn a{
+    color: purple;
+    text-decoration: none;
+}
+.nav-register-btn{
+    padding: 17px;
+    background-color: rgba(72, 9, 72, 0.854);
+    font-size: 1rem;
+    font-weight: 900;
+    width: 230px;
+    border: none;
+    border-radius: 6px;
+}
+.nav-register-btn a{
+    color: #fff;
+    text-decoration: none;
+}
+.burger{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    display: none;
+}
+.cancel{
+    width: 20px;
+    height: 20px; 
+    display: none;
+}
+.burger-line{
+    width: 90%;
+    height: 10px;
+    background-color: purple;
+    border-radius: 20px;
+}
+header{
+    margin-top: 5rem;
+}
+header h1, header p{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+}
+header p{
+    color: grey;
+}
+header img{
+    width: 100%;
+    height: 700px;
+    object-position: center;
+    object-fit: cover;
+    margin-top: 2rem;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr .6fr;
+    margin: 5rem 0rem;
+}
+section .textbox{
+    width: 70%;
+    font-size: 1.5rem;
+}
+section .textbox h2{
+    word-spacing: 1rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+section img{
+    background-position: right;
+    width: 100%;
+    height: 500px;
+}
+
+
+
+    /* PHONE DISPLAY CONFIG */
+    @media (max-width:450px) {
+        body{
+            padding: 0rem .7rem;
+            overflow-x: hidden;
+        }
+        .logo{
+            width: 80px;
+            height: 80px;
+        }
+        nav{
+            position: relative;
+            padding: 0rem;
+        }
+        .nav-links{
+            height: 90vh;
+            flex-direction: column ;
+            width: 104%;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.833);
+            transform: translateX(100%);
+            top: 100px;
+            transition: transform .6s ease-in-out;
+        }
+        .show{
+            transform: translateX(0%);
+        }
+        ul li .phone-link{
+            display: block;
+        }
+        ul li{
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        ul li a{
+            font-size: 1rem;
+            /* border-top: 1px solid grey;
+            border-bottom: 1px solid grey; */
+            padding: 20px 0px 20px 8px;
+          
+            cursor: pointer;
+        }
+        .nav-login-btn,.nav-register-btn{
+            display: none;
+        }
+        .burger{
+            width: 50px;
+            height: 50px;
+            display: flex;
+        }
+        .cancel{
+            width: 20px;
+            height: 20px; 
+        }
+        .burger-line{
+            width: 90%;
+            height: 6px;
+        }
+    hr{
+        display: none;
+    }
+    header{
+        margin-top: 3rem;
+    }
+    header h1, header p{
+        display: block;
+        text-align: center;
+        font-size: 1rem;
+    }
+    header h1{
+        margin-bottom: .5rem;
+    }
+    header p{
+        margin-bottom: 2rem;
+    }
+
+    header img{
+        width: 100%;
+        height: 400px;
+    }
+    section{
+        grid-template-columns: 1fr;
+        margin: 1.2rem 0rem;
+    }
+    section .textbox{
+        width: 100%;
+        font-size: .5rem;
+        margin-bottom: 1rem;
+    }
+    section .textbox h2{
+        word-spacing: 1rem;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    section img{
+        height: 300px;
+        margin-bottom: 2rem;
+    }
+    
+}

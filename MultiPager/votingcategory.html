@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> The Connected Awards</title>
+    <link rel="stylesheet" href="votingcategory.css">
+</head>
+<body>
+    <nav>
+        <img src="../image/lo.png" class="logo">
+        <ul class="nav-links">
+            <li> <a href="#"> Categories </a> </li>
+            <li> <a href="#"> Past editions </a> </li>
+            <li> <a href="#"> Future editions </a> </li>
+            <li> <a href="#"> About us </a> </li>
+            <li> <a href="#"> Make a donation </a> </li>
+            <li> <a href="#" class="phone-link"> Log In </a></li>
+            <li> <a href="#" class="phone-link">Create Account </a></li>
+        </ul>
+        <img src="/icons/burger (2).png" class="burger">
+        <div class="profile" id="theprofile">
+            <div class="profile-icon">
+                <img src="/icons/energy1.png" class="profile-icon">
+                <span> 70 </span>
+            </div>
+               
+            <hr>
+            <div class="profile-name">
+                <img src="/icons/profile photo.png" class="profile-photo">
+                <span> Femi Joshua</span>
+            </div>
+        </div>
+        <div class="logout-container">
+            <div class="profile-name">
+                <img src="/icons/profile photo.png" class="profile-photo">
+                <span> Femi Joshua</span>
+            </div>
+            <p> Log Out </p>
+        </div>
+    </nav>
+    <hr>
+    <header>
+        <h1>
+            Voting Categories
+        </h1>
+        <div class="search-inputs">
+            <input type="text" placeholder="Nominee's Name" class="search-box">
+            <input type="submit" value="Search" class="search-btn">
+        </div>
+    </header>
+    <section>
+        <div class="voting-boxes">
+            <div class="voting-box">
+                <img src="/icons/menu.png" class="voting-icon">
+                <span> Exceptional Data Analyst</span>
+            </div>
+            <div class="voting-box">
+                <img src="/icons/menu.png" class="voting-icon">
+                <span> Exceptional Data Analyst</span>
+            </div>
+            <div class="voting-box">
+                <img src="/icons/menu.png" class="voting-icon">
+                <span> Exceptional Data Analyst</span>
+            </div>
+            <div class="voting-box">
+                <img src="/icons/menu.png" class="voting-icon">
+                <span> Exceptional Data Analyst</span>
+            </div>
+            <div class="voting-box">
+                <img src="/icons/menu.png" class="voting-icon">
+                <span> Exceptional Data Analyst</span>
+            </div>
+            <div class="voting-box">
+                <img src="/icons/menu.png" class="voting-icon">
+                <span> Exceptional Data Analyst</span>
+            </div>
+            <div class="voting-box">
+                <img src="/icons/menu.png" class="voting-icon">
+                <span> Exceptional Data Analyst</span>
+            </div>
+            <div class="voting-box">
+                <img src="/icons/menu.png" class="voting-icon">
+                <span> Exceptional Data Analyst</span>
+            </div>
+            <div class="voting-box">
+                <img src="/icons/menu.png" class="voting-icon">
+                <span> Exceptional Data Analyst</span>
+            </div>
+            <div class="voting-box">
+                <img src="/icons/menu.png" class="voting-icon">
+                <span> Exceptional Data Analyst</span>
+            </div>
+            <div class="voting-box">
+                <img src="/icons/menu.png" class="voting-icon">
+                <span> Exceptional Data Analyst</span>
+            </div>
+            <div class="voting-box">
+                <img src="/icons/menu.png" class="voting-icon">
+                <span> Exceptional Data Analyst</span>
+            </div>
+            <div class="voting-box">
+                <img src="/icons/menu.png" class="voting-icon">
+                <span> Exceptional Data Analyst</span>
+            </div>
+            <div class="voting-box">
+                <img src="/icons/menu.png" class="voting-icon">
+                <span> Exceptional Data Analyst</span>
+            </div>
+            <div class="voting-box">
+                <img src="/icons/menu.png" class="voting-icon">
+                <span> Exceptional Data Analyst</span>
+            </div>
+            <div class="voting-box">
+                <img src="/icons/menu.png" class="voting-icon">
+                <span> Exceptional Data Analyst</span>
+            </div>
+        </div>
+    </section>
+    <script>
+        let logoutCont = document.querySelector('.logout-container');
+         let  profile =  document.querySelector('#theprofile');
+           profile.addEventListener('click',()=>{
+            appear();
+        })
+        function appear(){
+            logoutCont.classList.toggle('appear')
+        }
+
+    </script>
+</body>

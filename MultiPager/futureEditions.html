@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Future Editions</title>
+    <link rel="stylesheet" href="futureEdition.css">
+</head>
+<body>
+    <nav>
+        <img src="../image/lo.png" class="logo">
+        <ul class="nav-links">
+            <li> <a href="#"> Categories </a> </li>
+            <li> <a href="#"> Past editions </a> </li>
+            <li> <a href="futureEditions.html"> Future editions </a> </li>
+            <li> <a href="contawards.html"> About us </a> </li>
+            <li> <a href="donation.html"> Make a donation </a> </li>
+            <li> <a href="loginpage.html" class="phone-link"> Log In </a></li>
+            <li> <a href="registerpage.html" class="phone-link">Create Account </a></li>
+        </ul>
+        <img src="/icons/burger (2).png" class="burger">
+        <div class="profile">
+            <div class="profile-icon">
+                <img src="/icons/energy1.png" class="profile-icon">
+                <span> 70 </span>
+            </div>
+               
+            <hr>
+            <div class="profile-name" id="theprofile">
+                <img src="/icons/profile photo.png" class="profile-photo">
+                <span> Femi Joshua</span>
+            </div>
+        </div>
+        <div class="logout-container">
+            <div class="profile-name">
+                <img src="/icons/profile photo.png" class="profile-photo">
+                <span> Femi Joshua</span>
+            </div>
+            <p> Log Out </p>
+        </div>
+    </nav>
+    <hr>
+    <header>
+        <h1>
+            Future Editions
+        </h1>
+       <p> Nominate canditates for future editions</p>
+    </header>
+
+    <section>
+            <div class="edition-boxes">
+                <div class="edition-box">
+                    <img src="/icons/africa.png" class="edition-icon">
+                    <span> East African Edition</span>
+                    <button>Nominate</button>
+                </div>
+                <div class="edition-box">
+                    <img src="/icons/africa.png" class="edition-icon">
+                    <span> South African Edition </span>
+                    <button>Nominate</button>
+                </div>
+                <div class="edition-box">
+                    <img src="/icons/africa.png" class="edition-icon">
+                    <span> North African Edition</span>
+                    <button>Nominate</button>
+                </div>
+                <div class="edition-box">
+                    <img src="/icons/africa.png" class="edition-icon">
+                    <span> West African Edition</span>
+                    <button>Nominate</button>
+                </div>
+            </div>
+    </section>
+    <script>
+        let logoutCont = document.querySelector('.logout-container');
+         let  profile =  document.querySelector('#theprofile');
+           profile.addEventListener('click',()=>{
+            appear();
+        })
+        function appear(){
+            logoutCont.classList.toggle('appear')
+        }
+
+        let navLinks = document.querySelector('.nav-links');
+        let cancel= document.querySelector('.cancel');
+        let burger = document.querySelector('.burger').addEventListener('click', (e)=>{
+            // event.target.src= cancel.src;
+    
+            navLinks.classList.toggle('show')
+        })
+       
+
+    </script>
+</body>

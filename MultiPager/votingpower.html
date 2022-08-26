@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Voting Power</title>
+    <link rel="stylesheet" href="votingpower.css">
+</head>
+<body>
+    <nav>
+        <img src="../image/lo.png" class="logo">
+        <ul class="nav-links">
+            <li> <a href="#"> Categories </a> </li>
+            <li> <a href="#"> Past editions </a> </li>
+            <li> <a href="futureEditions.html"> Future editions </a> </li>
+            <li> <a href="contawards.html"> About us </a> </li>
+            <li> <a href="donation.html"> Make a donation </a> </li>
+            <li> <a href="loginpage.html" class="phone-link"> Log In </a></li>
+            <li> <a href="registerpage.html" class="phone-link">Create Account </a></li>
+        </ul>
+        <img src="/icons/burger (2).png" class="burger">
+        <div class="profile">
+            <div class="profile-icon">
+                <img src="/icons/energy1.png" class="profile-icon">
+                <span> 70 </span>
+            </div>
+               
+            <hr>
+            <div class="profile-name">
+                <img src="/icons/profile photo.png" class="profile-photo">
+                <span> Femi Joshua</span>
+            </div>
+        </div>
+        <div class="logout-container">
+            <div class="profile-name">
+                <img src="/icons/profile photo.png" class="profile-photo">
+                <span> Femi Joshua</span>
+            </div>
+            <p> Log Out </p>
+        </div>
+        
+    </nav>
+    <main>
+        <div class="container">
+            <h1>
+                Increase Your Voting Power
+            </h1>
+           <p> Cheers Your Favourite Nominee to Success</p>
+
+           <div class="voting-ranks">
+                <div class="twenty-votes">
+                <h2> <span> 20</span><br> votes</h2>
+                <p>$2.50</p>
+                <button> Buy </button>
+                </div>
+
+                <div class="fortyfive-votes">
+                    <h2> <span> 45</span> <br> votes</h2>
+                    <p>$5</p>
+                    <button> Buy </button>
+                </div>
+
+                <div class="seventy-votes">
+                    <h2> <span> 70</span> <br> votes</h2>
+                    <p>$7.50</p>
+                    <button> Buy </button>
+                    </div>
+
+                <div class="hundred-votes">
+                        <h2> <span> 100</span> <br>  votes</h2>
+                        <p>$10</p>
+                        <button> Buy </button>
+                </div>
+                
+            </div>
+        </divflex
+       
+    </main>
+   
+<script>
+        let profile = document.querySelector('.profile-name');
+        let container= document.querySelector('.logout-container');
+        profile.addEventListener('click', (e)=>{
+            container.classList.toggle('appear')
+        })
+        let navLinks = document.querySelector('.nav-links');
+        let cancel= document.querySelector('.cancel');
+        let burger = document.querySelector('.burger').addEventListener('click', (e)=>{
+            // event.target.src= cancel.src;
+    
+            navLinks.classList.toggle('show')
+        })
+       
+</script>
+</body>

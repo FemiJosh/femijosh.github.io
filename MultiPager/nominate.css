@@ -1,0 +1,306 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+@font-face {
+    font-family: Poppins ;
+    src: url(/font/Poppins/Poppins-Medium.ttf);
+}
+body{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(72, 9, 72, 0.854);
+    font-family: Poppins;
+}
+.container{
+    background-color: #fff;
+    width:70% ;
+    border-radius: 10px;
+    padding: 2rem 5rem;
+    margin-top: 2rem;
+}
+header h1{
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+}
+header p{
+    font-size: 1.5rem;
+    color: rgba(128, 128, 128, 0.713);
+    margin: 1rem;
+    text-align: center;
+}
+form input{
+    background: none;
+    border: .5px solid rgba(128, 128, 128, 0.592);
+    width: 100%;
+    height: 3.5rem;
+    margin-top: .5rem;
+    font-size: 1.8rem;
+    padding-left: 1rem;
+    padding: 2.5rem;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+}
+form h3{
+    margin-top: 1.5rem;
+}
+form h3::after{
+    content: '*';
+    color: rgba(236, 43, 43, 0.767);
+    margin-left: .5rem;
+}
+form h2{
+    margin-top: 4rem;
+}
+.Social-Medias img{
+    width: 40px;
+    height: 40px;
+    margin-right: .9rem;
+}
+h4, h3{
+    display: flex;
+    font-size: 1.5rem;
+}
+.Linkedin, .Instagram, .Twitter, .Facebook{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.Social-Medias input{
+    width: 80%;
+    margin-top: .5rem;
+}
+section{
+    text-align: center;
+    margin-top: 3rem;
+}
+section .section-text{
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+section .questions{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-weight: bolder;
+}
+section .questions a{
+    color: purple;
+    text-decoration:none;
+}
+section button{
+    display: inline;
+    padding: 2.5rem;
+    background-color: rgba(72, 9, 72, 0.854);
+    color: #fff;
+    font-size: 1.2rem;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.confirmation-message-container{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.636);
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.confirmation-message{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 50%;
+    height: 60%;
+    position: relative;
+}
+.confirmation-message img{
+    width: 120px;
+    height: 120px;
+    margin-bottom: 2rem;
+}
+.confirmation-message h5{
+    font-size: 3rem;
+    color: rgba(72, 9, 72, 0.854);
+}
+.confirmation-message p{
+    font-size: 1.5rem;
+    margin: 2rem 0rem;
+}
+.confirmation-message button{
+    width: 80%;
+    height: 4.5rem;
+    margin-top: 3rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    background-color: rgba(72, 9, 72, 0.854);
+    color: #fff;
+    word-spacing: .5rem;
+    border: none;
+
+}
+.confirmation-message span{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 3rem;
+    cursor: pointer;
+}
+.todisplay{
+    display: flex;
+    overflow-y: hidden ;
+}
+
+/* make confirmation display and themn omake body overflow to be hidden */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:450px){
+    body{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.854);
+        font-family: Poppins;
+    }
+    .container{
+        width:100% ;
+        border-radius: 00px;
+        padding: 1rem;
+    }
+    header{
+        margin-bottom: 2rem;
+    }
+    header h1{
+        font-size: 1.2rem;
+    }
+    header p{
+        font-size: .8rem;
+        margin: .5rem;
+    }
+    form input{
+        width: 80%;
+        height: 2.7rem;
+        margin-top: .5rem;
+    }
+    form h3,h4{
+        margin-top: 1rem;
+        font-size: .6rem;
+    }
+    form input{
+        background: none;
+        border: .5px solid rgba(128, 128, 128, 0.592);
+        width: 100%;
+        height: 3.5rem;
+        margin-top: .5rem;
+        font-size: 1rem;
+        padding-left: 1rem;
+        padding: 1.5rem;
+        font-family:Arial, Helvetica, sans-serif;
+        border-radius: 8px;
+    }
+    form h3::after{
+        margin-left: .2rem;
+    }
+    form h2{
+        margin-top: 2rem;
+    }
+    .Social-Medias img{
+        width: 20px;
+        height: 20px;
+        margin-right: .5rem;
+    }
+
+    .Linkedin, .Instagram, .Twitter, .Facebook{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    .Social-Medias input{
+        width: 70%;
+        margin-top: .5rem;
+    }
+    section{
+        text-align: center;
+    }
+    section .section-text{
+        font-size: 1rem;
+        margin: 1rem;
+    }
+    section .questions{
+        font-size: 1rem;
+        margin-top: 2rem;
+        font-weight: bolder;
+    }
+    section button{
+        padding: 1.5rem;
+        background-color: rgba(72, 9, 72, 0.854);
+    }
+    .confirmation-message{
+        width: 85%;
+        height: 40%;
+        border-radius: 10px;
+        position: relative;
+    }
+    .confirmation-message img{
+        width: 50px;
+        height: 50px;
+        margin-bottom: 2rem;
+    }
+    .confirmation-message h5{
+        font-size: 1rem;
+    }
+    .confirmation-message p{
+        font-size: .8rem;
+        text-align: center;
+        margin: .5rem 0rem;
+    }
+    .confirmation-message button{
+        height: 3.5rem;
+        margin-top: 1rem;
+        font-size: .8rem;
+        word-spacing: 0rem;
+    
+    }
+    .confirmation-message span{
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        font-size: 1.5rem;
+    }
+    
+}
