@@ -179,6 +179,159 @@ section button{
 
 
 
+            /* SMALL LAPTOPS */
+
+  /* FOR SMALL LAPTOPS */
+  @media only screen and (max-width:1360px){
+
+    body{
+        padding: 0rem 1rem;
+        font-family: Poppins;
+    }
+    nav{
+        padding: 0rem 0rem;
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
+    }
+    .nav-links{
+        width: 70%;
+        justify-content: space-around;
+        margin-left: 2rem;
+    }
+    
+    .nav-login-btn{
+        padding: 15px;
+        width: 100px;
+        margin-right: 1rem;
+    }
+    .nav-register-btn{
+        padding: 15px;
+        width: 200px;
+    }
+    
+    hr{
+        margin: 0rem 2rem;
+    }
+    header{
+        font-size: .7rem;
+    }
+    header P::after{
+        margin-left: 2rem;
+    }
+    .profile{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-right: 0rem;
+        width: 25%;
+        height: 80px;
+        font-weight: bolder;
+    }
+    .profile span{
+        font-size: 1.2rem;
+    }
+    .profile hr{
+        height: 35px;
+    }
+    .profile img{
+        width: 25px;
+        height: 25px;
+        margin: 0rem .5rem;
+    }
+    .profile .profile-name span::after{
+        content: '>';
+        margin-left: 0rem;
+    }
+    .logout-container{
+        width: 300px;
+        height: 200px;
+        background-color:rgba(68, 23, 111, 0.155);
+        right: 0px;
+        top: 100px;   
+    }
+    
+    .logout-container img{
+        width: 25px;
+        height: 25px;
+        margin: 0rem .8rem;
+    }
+    .logout-container span{
+        font-size: 1.7rem;
+    }
+    .logout-container p{
+        font-size: 1.9rem;
+        border-top: 3px solid rgb(255, 255, 255);
+        border-bottom: 3px solid rgb(255, 255, 255);
+        padding: 1rem .5rem;
+        display: block;
+        width: 80%;
+        text-align: center;
+    }
+    .logout-container p::before{
+        content: '[<-';
+        margin-right: 1rem;
+        font-size: 1.6rem;
+    }
+    .edition-boxes{
+        row-gap: 1rem;
+        margin-top: 5rem;
+    }
+    .edition-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 300px;
+        height: 300px;
+        box-shadow: 0px 0px 10px 5px rgba(227, 223, 223, 0.056);
+    }
+    
+    .edition-box span{
+        color: purple;
+        font-size: 1.1rem;
+    }
+    .edition-box img{
+        width: 70px;
+        height: 70px;
+    }
+    section button{
+        width: 230px;
+        margin-top: 2rem 0rem;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

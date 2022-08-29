@@ -17,6 +17,7 @@ body{
     align-items: center;
     background-color: rgba(72, 9, 72, 0.854);
     font-family: Poppins;
+    margin: 5rem;
 }
 .container{
     background-color: #fff;
@@ -63,7 +64,7 @@ header button img{
 }
 hr{
     display: inline-block;
-    width: 43%;
+    width: 44%;
     text-align: center;
     margin: .5rem 0.5rem ;
 }
@@ -107,6 +108,28 @@ form h3{
 
 
 
+
+
+
+
+
+
+        /* SMALL LAPTOPS */
+
+
+@media only screen and (max-width:1360px){
+    hr{
+        width: 42%;
+    }
+}
+
+
+
+
+
+
+
+            /* PHONE DISPLAY */
  @media (max-width:450px){
     body{
         width: 100vw;
@@ -143,6 +166,7 @@ form h3{
     }
     hr{
         width: 41.2%;
+        max-width: 40% ;
         margin-top:  0.5rem; ;
     }
     form input{

@@ -8,7 +8,7 @@
     src: url(/font/Poppins/Poppins-Medium.ttf);
 }
 body{
-    /* padding: 0rem 5rem; */
+    padding: 0rem 5rem;
     font-family: Poppins;
 }
 nav{
@@ -354,9 +354,97 @@ footer{
 
 
 
+
+
+/* FOR SMALL LAPTOPS */
+@media only screen and (max-width:1360px){
+
+body{
+    padding: 0rem 1.5rem;
+    font-family: Poppins;
+}
+nav{
+    padding: 0rem 0rem;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+.nav-links{
+    width: 70%;
+    justify-content: space-around;
+    margin-left: 2rem;
+}
+
+.nav-login-btn{
+    padding: 15px;
+    width: 100px;
+    margin-right: 1rem;
+}
+.nav-register-btn{
+    padding: 15px;
+    width: 200px;
+}
+
+hr{
+    margin: 0rem 2rem;
+}
+header{
+    font-size: .7rem;
+}
+header P::after{
+    margin-left: 2rem;
+}
+.our-target{
+    height: fit-content;
+}
+.our-target h1{
+    font-size: 1.8em;
+}
+.our-target-boxes{
+    padding: 2.5rem 1rem;
+}
+.our-target-box{
+    width: 90%;
+    padding: 3rem;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 0px 2.5px #fff;
+}
+.our-target-box img{
+   width: 140px;
+   height: 140px;
+}
+.our-target-box span{
+    font-size: 1.8rem;
+    margin: .5rem;
+}
+.second-section{
+    padding: 3rem 1rem;
+}
+.second-section-secondlogo, .second-section-firstlogo{
+    width: 150px;
+    height: 150px;  
+}
+
+.third-section-boxes{
+    padding: 2rem 1rem;
+    column-gap: 2rem;
+}
+.third-section-box h3{
+    font-size: 1.5rem;
+}
+
+}
+
+
+
+
+
+
+
 /* PHONE SCREEN CONFIG */
 
-@media (max-width:450px) {
+@media only screen and (max-width:450px) {
     body{
         padding: 0rem .7rem;
         overflow-x: hidden;
@@ -393,8 +481,8 @@ footer{
     }
     ul li a{
         font-size: 1rem;
-        border-top: 1px solid grey;
-        border-bottom: 1px solid grey;
+        /* border-top: 1px solid grey;
+        border-bottom: 1px solid grey; */
         padding: 20px 0px 20px 8px;
       
         cursor: pointer;
@@ -495,7 +583,7 @@ footer{
         background-size: cover;
     }
     .second-section-setofimage{
-        width: 165px;
+        width: 100%;
         height: 160px;
     }
     .second-section-firstbox-text,.second-section-secondbox-text{

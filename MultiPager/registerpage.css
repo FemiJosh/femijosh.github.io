@@ -123,6 +123,31 @@ footer button{
 
 
 
+
+
+                /* FOR SMALL LAPTOPS */
+
+@media only screen and (max-width:1360px){
+    hr{
+        width: 42%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* PHONE DISPLAY */
 @media (max-width:450px){
     body{
         width: 100vw;
